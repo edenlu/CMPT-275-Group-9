@@ -1,0 +1,6 @@
+framework module Pods_PlayTests {
+  umbrella header "Pods-PlayTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
