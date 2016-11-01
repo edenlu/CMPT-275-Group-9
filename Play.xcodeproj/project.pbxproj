@@ -24,6 +24,8 @@
 		94C5535B1DB514720056EBF6 /* MainMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C5535A1DB514720056EBF6 /* MainMapController.swift */; };
 		94DA5DB01DC31C55006626BE /* GameMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA5DAF1DC31C55006626BE /* GameMarker.swift */; };
 		94DA5DB21DC323E8006626BE /* StartGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94DA5DB11DC323E8006626BE /* StartGameViewController.storyboard */; };
+		A1A956021DC58E2400B1179A /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A956011DC58E2400B1179A /* GameScreenViewController.swift */; };
+		A1A956041DC5A3EB00B1179A /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A956031DC5A3EB00B1179A /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		94C5535A1DB514720056EBF6 /* MainMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMapController.swift; path = ../MainMapController.swift; sourceTree = "<group>"; };
 		94DA5DAF1DC31C55006626BE /* GameMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMarker.swift; sourceTree = "<group>"; };
 		94DA5DB11DC323E8006626BE /* StartGameViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StartGameViewController.storyboard; sourceTree = "<group>"; };
+		A1A956011DC58E2400B1179A /* GameScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
+		A1A956031DC5A3EB00B1179A /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		A70922A4E991CEC39537CAA3 /* Pods-PlayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayTests/Pods-PlayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2FC2BCF4E469A85EA3F1E7 /* Pods-Play.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Play.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Play/Pods-Play.debug.xcconfig"; sourceTree = "<group>"; };
 		D12E60BCA63A3742F57C2785 /* Pods_PlayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,7 @@
 				94C3280F1DC3051D002D504F /* FriendViewController.swift */,
 				94C328111DC3052B002D504F /* StartGameViewController.swift */,
 				94C328151DC30536002D504F /* EndGameViewController.swift */,
+				A1A956011DC58E2400B1179A /* GameScreenViewController.swift */,
 			);
 			name = ViewControllerClasses;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				945B90C81DC34D9C009E5A02 /* ItemClass */,
 				94941D271DC30053007D28FA /* ViewControllerClasses */,
 				94C553291DB503790056EBF6 /* AppDelegate.swift */,
+				A1A956031DC5A3EB00B1179A /* ScoreViewController.swift */,
 				94C553301DB5037A0056EBF6 /* Assets.xcassets */,
 				94C553351DB5037B0056EBF6 /* Info.plist */,
 				94C553571DB50A4C0056EBF6 /* Play-Bridging-Header.h */,
@@ -488,6 +494,8 @@
 				94DA5DB01DC31C55006626BE /* GameMarker.swift in Sources */,
 				94C5532A1DB503790056EBF6 /* AppDelegate.swift in Sources */,
 				94C328101DC3051D002D504F /* FriendViewController.swift in Sources */,
+				A1A956021DC58E2400B1179A /* GameScreenViewController.swift in Sources */,
+				A1A956041DC5A3EB00B1179A /* ScoreViewController.swift in Sources */,
 				94C328171DC30536002D504F /* EndGameViewController.swift in Sources */,
 				94C328131DC3052B002D504F /* StartGameViewController.swift in Sources */,
 			);

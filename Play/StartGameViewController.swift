@@ -10,6 +10,8 @@ import UIKit
 
 class StartGameViewController: UIViewController {
 
+//    @IBAction func GoToScreen(_ sender: AnyObject) {
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +19,8 @@ class StartGameViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+//    @IBAction func Next(_ sender: AnyObject) {
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
