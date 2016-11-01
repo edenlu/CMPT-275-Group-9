@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import GameKit
 
-class InfoViewController: UIViewController {
+class InfoViewController: BaseViewController {
 
     @IBOutlet weak var DoneButton: UIButton!
     @IBOutlet weak var UserIcon: UIImageView!
@@ -21,7 +22,7 @@ class InfoViewController: UIViewController {
         self.view.backgroundColor = UIColor.green
         setUpIcon()
         setUpLabels()
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,23 +31,34 @@ class InfoViewController: UIViewController {
     }
     
     func setUpIcon(){
-//        let iconOffset = self.view.frame.width/8
-//        let iconWidth = self.view.frame.height/5
-//        
-//        let iconOrigin = CGPoint(x: self.view.frame.origin.x + iconOffset,y: self.view.frame.origin.x + iconOffset)
-//        let iconSize = CGSize(width: iconWidth, height: iconWidth)
-//        UserIcon.frame = CGRect(origin: iconOrigin, size: iconSize)
         UserIcon.image = #imageLiteral(resourceName: "head")
     }
     
     func setUpLabels()
     {
+        let player = GKLocalPlayer.localPlayer()
         IDLabel.backgroundColor = UIColor.lightGray
         TeamLabel.backgroundColor = UIColor.lightGray
         ScoreLabel.backgroundColor = UIColor.lightGray
-        IDLabel.text = "ABCD"
+        
+        IDLabel.text = player.displayName
         TeamLabel.text = "Mars"
         ScoreLabel.text = "0"
     }
+    
+    @IBAction func showLB(_ sender: AnyObject) {
+        let gcvc = GKGameCenterViewController()
+        gcvc.gameCenterDelegate = self
+        gcvc.viewState = GKGameCenterViewControllerState.leaderboards
+        //gcvc.leaderboardIdentifier = "FastTap"
+        //scoreBoard = gcvc.view
+        self.present(gcvc, animated: true, completion: nil)
+    }
+}
 
+extension InfoViewController: GKGameCenterControllerDelegate{
+    func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController) {
+        gameCenterViewController.dismiss(animated: true, completion: nil)
+    }
+    
 }

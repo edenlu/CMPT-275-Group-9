@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendViewController: UIViewController {
+class FriendViewController: BaseViewController {
 
     @IBOutlet weak var TemporaryImage: UIImageView!
     override func viewDidLoad() {
