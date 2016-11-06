@@ -1,0 +1,9 @@
+____
+Test Case 1:
+Game 1 Button Press
+  -Navigate to game one main screen
+  -Press main button
+  
+  Expected Output: Number on counter should increase by 1
+_____
+Test Case 2:
