@@ -26,6 +26,14 @@ class PlayTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testGameOne() {
+        // Hit main button on game one
+        // Assert output on next screen is "<proper output>"
+        // buttonObj.sendActionsForControlEvents(UIControlEvents.TouchUpInside)
+        // numTap.sendActionsForControlEvents(UIControlEvents.TouchUpInside)
+        // XCTAssertEqual(ourOutput, <proper output>, "Testing proper output")
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
