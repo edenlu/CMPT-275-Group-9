@@ -8,19 +8,27 @@
 
 import UIKit
 
-class StartGameViewController: UIViewController {
+class StartGameViewController: BaseViewController {
 
-//    @IBAction func GoToScreen(_ sender: AnyObject) {
-//    }
-
+    @IBOutlet weak var gameName: UILabel!
+    @IBOutlet weak var teamName: UILabel!
+    @IBOutlet weak var gameIcon: UIImageView!
+    
+    //Variable that store data before segue to this view controller
+    var gameID: String = ""
+    var teamID: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(colorLiteralRed: 0, green: 0.8, blue: 0, alpha: 1)
+        gameName.text = gameID
+        gameIcon.image = UIImage(named: gameID + "Icon")
+        teamName.text = teamID
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
 
-//    @IBAction func Next(_ sender: AnyObject) {
-//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -31,5 +39,4 @@ class StartGameViewController: UIViewController {
         let vc = sb.instantiateInitialViewController()
         self.present(vc!, animated: false, completion: nil)
     }
-
 }

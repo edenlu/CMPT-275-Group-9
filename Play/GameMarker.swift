@@ -10,13 +10,17 @@ import UIKit
 
 class GameMarker: GMSMarker {
     var turnedOn: Bool! = nil
-    let markerID = -1
+    var markerID: String = ""
+    var teamName: String = ""
     var markerImage: UIImage!
     override init() {
         super.init()
         turnedOn = false
-        markerImage = imageResize(image: #imageLiteral(resourceName: "marker"), sizeChange: CGSize(width: 50, height: 50))
+        //markerImage = imageResize(image: #imageLiteral(resourceName: "marker"), sizeChange: CGSize(width: 20, height: 40))
+        markerImage = self.icon
         self.icon = markerImage
+        //need a constructor to get data from a document .json or .txt
+        markerID = ""
     }
     
     
